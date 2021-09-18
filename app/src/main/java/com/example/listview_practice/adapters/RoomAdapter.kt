@@ -45,7 +45,7 @@ class RoomAdapter(
 //        val resourceId = context.resources.getIdentifier(roomData., "drawable", context.packageName)
 
 //        roomImg.setImageResource(resourceId)
-        roomPrice.text = roomData.price
+        roomPrice.text = roomData.getFormattedPrice()
         roomLocation.text = "${roomData.location}, ${roomData.getFormattedFloor()}"
         roomIntroduction.text = roomData.introduction
         roomType1.text = roomData.roomType1
