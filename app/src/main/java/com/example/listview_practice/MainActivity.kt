@@ -31,13 +31,10 @@ class MainActivity : AppCompatActivity() {
         mRoomList.add(RoomData(ContextCompat.getDrawable(this, R.drawable.room6)!!, 15000, "망원동", 2,
             "초역세권★베란다 공간 있는 원룸", "전세", "다세대건물", "분리형 원룸"))
 
-//        String에 숫자 써지네.....
-
 
         val mAdapter = RoomAdapter(this, R.layout.room_list_item, mRoomList)
 
         roomListView.adapter = mAdapter
-
 
         roomListView.setOnItemClickListener { adapterView, view, position, l ->
 
@@ -45,6 +42,8 @@ class MainActivity : AppCompatActivity() {
 
             val myIntent = Intent(this, ViewRoomDetail::class.java)
             myIntent.putExtra("roomData", clickedRoom)
+
+            startActivity(myIntent)
 
         }
 
