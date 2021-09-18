@@ -34,23 +34,13 @@ class RoomAdapter(
 
 //        row. 으로 들어가는 이유 ↑저기 실제 결과로 나갈  row 안에서 찾아봐라!
 
-        val roomImg = row.findViewById<ImageView>(R.id.roomImage)
         val roomPrice = row.findViewById<TextView>(R.id.roomPriceTxt)
         val roomLocation = row.findViewById<TextView>(R.id.roomLocationTxt)
         val roomIntroduction = row.findViewById<TextView>(R.id.roomExplainTxt)
-        val roomType1 = row.findViewById<TextView>(R.id.roomType1Txt)
-        val roomType2 = row.findViewById<TextView>(R.id.roomType2Txt)
-        val roomType3 = row.findViewById<TextView>(R.id.roomType3Txt)
 
-//        val resourceId = context.resources.getIdentifier(roomData., "drawable", context.packageName)
-
-//        roomImg.setImageResource(resourceId)
         roomPrice.text = roomData.getFormattedPrice()
         roomLocation.text = "${roomData.location}, ${roomData.getFormattedFloor()}"
         roomIntroduction.text = roomData.introduction
-        roomType1.text = roomData.roomType1
-        roomType2.text = roomData.roomType2
-        roomType3.text = roomData.roomType3
 
         return row
     }

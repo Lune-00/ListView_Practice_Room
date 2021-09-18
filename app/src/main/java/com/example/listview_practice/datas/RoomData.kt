@@ -7,14 +7,10 @@ import java.text.NumberFormat
 import java.util.*
 
 class RoomData(
-    val image : Drawable,
     val price : Int,
     val location : String,
     val floor : Int,
-    val introduction : String,
-    val roomType1 : String,
-    val roomType2 : String,
-    val roomType3 : String) : Serializable {
+    val introduction : String, ) : Serializable {
 
     fun getFormattedPrice() : String{
 
