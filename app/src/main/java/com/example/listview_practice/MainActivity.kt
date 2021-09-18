@@ -1,5 +1,6 @@
 package com.example.listview_practice
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.ContextCompat
@@ -36,6 +37,16 @@ class MainActivity : AppCompatActivity() {
         val mAdapter = RoomAdapter(this, R.layout.room_list_item, mRoomList)
 
         roomListView.adapter = mAdapter
+
+
+        roomListView.setOnItemClickListener { adapterView, view, position, l ->
+
+            val clickedRoom = mRoomList[position]
+
+            val myIntent = Intent(this, ViewRoomDetail::class.java)
+            myIntent.putExtra("roomData", clickedRoom)
+
+        }
 
 
     }

@@ -2,6 +2,7 @@ package com.example.listview_practice.datas
 
 import android.graphics.drawable.Drawable
 import android.media.Image
+import java.io.Serializable
 import java.text.NumberFormat
 import java.util.*
 
@@ -13,7 +14,7 @@ class RoomData(
     val introduction : String,
     val roomType1 : String,
     val roomType2 : String,
-    val roomType3 : String) {
+    val roomType3 : String) : Serializable {
 
     fun getFormattedPrice() : String{
 
