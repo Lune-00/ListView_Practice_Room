@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         "망원/홍대역 풀옵션", "전세", "다세대건물", "오픈형 원룸"))
         mRoomList.add(RoomData(ContextCompat.getDrawable(this, R.drawable.room2)!!, 28500, "서교동", 0,
             "신혼부부의 보금자리", "전세", "다세대건물", "복층형 원룸"))
-        mRoomList.add(RoomData(ContextCompat.getDrawable(this, R.drawable.room3)!!, 12000, "서교동", 5,
+        mRoomList.add(RoomData(ContextCompat.getDrawable(this, R.drawable.room3)!!, 112000, "서교동", 5,
             "홍대입구역 인근 원룸 전세", "전세", "다세대건물", "오픈형 원룸"))
         mRoomList.add(RoomData(ContextCompat.getDrawable(this, R.drawable.room4)!!, 7500, "성산동", 3,
             "넓고 반듯한 오픈형 원룸", "전세", "다세대건물", "오픈형 원룸"))
