@@ -46,7 +46,7 @@ class RoomAdapter(
 
 //        roomImg.setImageResource(resourceId)
         roomPrice.text = roomData.price
-        roomLocation.text = roomData.location
+        roomLocation.text = "${roomData.location}, ${roomData.getFormattedFloor()}"
         roomIntroduction.text = roomData.introduction
         roomType1.text = roomData.roomType1
         roomType2.text = roomData.roomType2
