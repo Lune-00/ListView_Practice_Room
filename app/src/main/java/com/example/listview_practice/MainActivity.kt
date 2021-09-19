@@ -34,6 +34,8 @@ class MainActivity : AppCompatActivity() {
 
             val clickedRoom = mRoomList[position]
 
+//            몇 번째 칸이 클릭됐는지에 대한 정보를 인텐트에 넘겨줘야 한다...?
+
             val myIntent = Intent(this, ViewRoomDetail::class.java)
             myIntent.putExtra("roomData", clickedRoom)
 
